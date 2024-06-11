@@ -28,8 +28,10 @@ secend_idx = int(input('Enter your stopping index: '))
 system_check = Mezbah(0)
 system_check.hello()
 dis_loop_dta = system_check.val_loop(frist_idx, secend_idx)
-
 print('This is loop data in array format:', dis_loop_dta)
+
+   # This is another project (2th ) --> 
+
 
 
 
