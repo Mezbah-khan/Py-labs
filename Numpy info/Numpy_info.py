@@ -2,7 +2,7 @@
 # Lets create an info  with examples of numpy laibaries 
 # Lets build this project with proper codes 
 
-import numpy as  np 
+import numpy as np 
 
 arr1  = [1,2,3,4,5,6,7]
 arr2 = [8,9,10,11,12,13,14]
@@ -104,4 +104,54 @@ print(ex18,ex19)
 ex20 = np.concatenate((arr1,arr2),axis=0)
 print(ex20)   # Output --> [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
 
+    # Lets add those array horizontally 
+      
+ex21 = np.hstack((arr1,arr2))
+print(ex21)
+ 
+ex22 = np.vstack((arr3,arr4))
+print(ex22)
+
+      # Lets create two new array as insert some common data in the array 
+      
+new_array01 = np. array ([12,13,14,15,16,17,18,19,20])
+print(new_array01) 
+
+    # Lets add those array horizontally 
+      
+ex21 = np.hstack((arr1,arr2))
+print(ex21)
+ 
+ex22 = np.vstack((arr3,arr4))
+print(ex22)
+
+      # Lets create two new array as insert some common data in the array 
+      
+new_array01 = np. array ([12,13,14,15,16,17,18,19,20])
+new_array02 = np.array ([15,16,17,18,19,20,21,22,23])
+
+check_data01  = np.intersect1d(new_array01, new_array02)
+print(check_data01)   #output common data ---> [15 16 17 18 19 20]
+
+     # Lets remove un-common data 
     
+check_data02 = np.setdiff1d (new_array01,new_array02)
+print(check_data02)  #output --> [12 13 14]
+
+     # Lets slice the codes with numpy methods
+     
+ex23 = arr1.copy()
+slice01 =(ex23[0:])
+print(slice01) #output --> [1, 2, 3, 4, 5, 6, 7] = 6 index 
+
+slice02 = (ex23[:6])
+print(slice02)  #output ---> [1, 2, 3, 4, 5, 6]
+
+slice03 = (ex23[2:5])
+print(slice03)  #output --> [3, 4, 5]
+
+slice04 = (ex23[:2]) 
+print(slice04) #output ---> [1, 2]
+
+
+     
