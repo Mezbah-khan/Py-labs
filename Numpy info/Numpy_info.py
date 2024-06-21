@@ -83,7 +83,6 @@ print(ex14)  # Output --> (2, 4) CAUSE there are 2 rows and 4 values in each row
 ex15 = np.reshape(ex04, (2, 5))
 print(ex15)
 
-
    # Lets create array use all joining method of numpy
    
 ex16 = np.add(arr1,arr2)
@@ -99,6 +98,7 @@ ex19 = (arr3 + arr4)
 
 print(ex18,ex19)
     
+
       # Lets use the comncatinate method 
       
 ex20 = np.concatenate((arr1,arr2),axis=0)
@@ -152,6 +152,58 @@ print(slice03)  #output --> [3, 4, 5]
 
 slice04 = (ex23[:2]) 
 print(slice04) #output ---> [1, 2]
+
+    # Lets add the values with functions
+ex24= np.add(arr1,arr2)
+print(ex24)   #output--> [ 9 11 13 15 17 19 21]
+
+ex25 = np.subtract(arr3,arr4)
+print(ex25) #output --> [[ 5 14 23 31] , [40 49 58 67]]
+
+ex26 = np.multiply(arr1,arr2)
+print(ex26) #output --> [ 8 18 30 44 60 78 98]
+
+ex27 = np.divide(arr3,arr4)
+print(ex27)  #output --> [[2.         3.33333333 4.28571429 4.44444444] [5.         5.45454545 5.83333333 6.15384615]]
+
+     # lets perform action in this example 
+
+ex28 = np.sum(arr1) 
+print(ex28) # output --> 28 
+
+ex29 = np.max(arr4)
+print(ex29) #output --> 13
+
+ex30 = np. min(arr3)
+print(ex30) #output --> 10 
+
+ex31 = np.mean(arr4)
+print(ex31)  #output --> 9.125
+
+ex32 = np.cumsum(arr2)
+print(ex32)  #output --> [ 8 17 27 38 50 63 77]
+
+ex33 = np.cumprod(arr1) 
+print(ex33)  #output -->  [  1    2    6   24  120  720 5040]
+
+   
+    # lets try something else 
+ex34 = np.transpose(arr3)
+print(ex34)   #output--> [[10 50] [20 60][30 70] [40 80]] 
+
+    # lets create an multiple array 
+    
+a = np.array([[[1, 2, 3], 
+               [4, 5, 6]], 
+              
+              [[7, 8, 9], 
+               [10, 11, 12]]])
+
+b = a .flatten()
+print('original value : ',a, '\nflatten value : ',b)
+
+
+    
 
 
      
