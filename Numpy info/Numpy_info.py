@@ -201,9 +201,7 @@ a = np.array([[[1, 2, 3],
 
 b = a .flatten()
 print('original value : ',a, '\nflatten value : ',b)
-
-
+    # next time more must be 
     
-
 
      
